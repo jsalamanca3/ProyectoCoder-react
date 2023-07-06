@@ -1,0 +1,22 @@
+.header-div {
+    display: grid;
+    grid-area: 1 / 2 / 2 / 6;
+    justify-content: end;
+}
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+    height: auto;
+}
+.header-nav-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+li {
+    list-style: none;
+}

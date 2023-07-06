@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+.header-carrito {
+  display: grid;
+  grid-area: 1 / 6 / 2 / 7;
+  justify-items: end;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  font-size: 25px;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
