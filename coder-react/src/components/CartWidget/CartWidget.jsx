@@ -6,6 +6,9 @@ function CartWidget() {
             <span class="material-symbols-outlined">
             shopping_cart
             </span>
+            <div className="header-cartWidget-carrito">
+                <p className="cartWidget-carrito">1</p>
+            </div>
         </div>
     )
 }

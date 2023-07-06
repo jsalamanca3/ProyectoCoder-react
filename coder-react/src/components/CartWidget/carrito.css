@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 .header-carrito {
+  position: relative;
   display: grid;
   grid-area: 1 / 6 / 2 / 7;
   justify-items: end;
@@ -9,4 +10,18 @@
 .material-symbols-outlined {
   font-size: 25px;
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.header-cartWidget-carrito {
+  position: absolute;
+  margin: 0px -14px 25px 0px;
+  width: 16px;
+  height: auto;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 10px;
+}
+.cartWidget-carrito {
+  text-align: center;
+  font-size: 12px;
 }
