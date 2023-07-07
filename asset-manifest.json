@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ProyectoCoder-react/static/css/main.4694d91a.css",
+    "main.js": "/ProyectoCoder-react/static/js/main.5963e73e.js",
+    "index.html": "/ProyectoCoder-react/index.html",
+    "main.4694d91a.css.map": "/ProyectoCoder-react/static/css/main.4694d91a.css.map",
+    "main.5963e73e.js.map": "/ProyectoCoder-react/static/js/main.5963e73e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4694d91a.css",
+    "static/js/main.5963e73e.js"
+  ]
+}
