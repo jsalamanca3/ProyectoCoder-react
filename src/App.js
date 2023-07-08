@@ -23,7 +23,7 @@ function App() {
       <main>
         <section className='main-section'>
           <div>
-            <ItemListContainer colorTexto="blue" texto="Bienvenido Usuario" />
+            <ItemListContainer colorTexto="blue" greenting="Bienvenido Usuario" />
           </div>
         </section>
       </main>

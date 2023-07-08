@@ -8,7 +8,7 @@ function ItemListContainer(props) {
 
     return (
         <>
-            <h1 style={styleTexto}>{props.texto}</h1>
+            <h1 style={styleTexto}>{props.greenting}</h1>
             <h2>Bienvenidos a nuestra Tienda</h2>
         </>
     )
