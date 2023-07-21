@@ -1,0 +1,125 @@
+const productos = [
+    {
+      title: "Charmeleon",
+      id: 1,
+      limit: 10,
+      description: "Soy una descripcion",
+      img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+      price: 3000,
+      category: "fuego",
+    },
+    {
+      title: "Vulpix",
+      id: 2,
+      stock: 3,
+      description: "Soy una descripcion",
+      img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+      price: 500,
+      category: "fuego"
+    },
+    {
+      title: "Pikachu",
+      id: 3,
+      stock: 10,
+      description: "Soy una descripcion",
+      img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+      price: 1800,
+      category: "electrico",
+    },
+    {
+      title: "Arbok",
+      id: 4,
+      stock: 2,
+      description: "Soy una descripcion",
+      img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
+      price: 150,
+      category: "veneno",
+    },
+    {
+      title: "Haunter",
+      id: 5,
+      limit: 6,
+      description: "Soy una descripcion",
+      img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+      price: 700,
+      category: "fantasma",
+    },
+    {
+      title: "Gengar",
+      id: 6,
+      stock: 8,
+      description: "Soy una descripcion",
+      img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+      price: 700,
+      category: "fantasma"
+    },
+    {
+      title: "Vileplume",
+      id: 7,
+      stock: 3,
+      description: "Soy una descripcion",
+      img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
+      price: 1250,
+      category: "planta",
+    },
+    {
+      title: "Venonat",
+      id: 8,
+      stock: 8,
+      description: "Soy una descripcion",
+      img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
+      price: 1700,
+      category: "planta",
+    },
+    {
+      title: "Arcanine",
+      id: 9,
+      stock: 10,
+      description: "Soy una descripcion",
+      img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+      price: 3100,
+      category: "fuego",
+    },
+    {
+      title: "Primeape",
+      id: 10,
+      stock: 4,
+      description: "Soy una descripcion",
+      img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
+      price: 560,
+      category: "lucha",
+    },
+  ];
+
+  function getData() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        const date = new Date().toLocaleDateString;
+        resolve(productos, date);
+      }, 2000);
+    });
+  }
+
+  export function getProductData(idURL) {
+    return new Promise((resolve, reject) => {
+      const productRequested = productos.find(
+        (item) => item.id === Number(idURL)
+      );
+      setTimeout(() => {
+        resolve(productRequested);
+      }, 2000);
+    });
+  }
+
+  export function getCategoryData(categoryURL) {
+    return new Promise((resolve, reject) => {
+      const categoryRequested = productos.filter((item) => {
+        return item.category.toLowerCase() === categoryURL.toLowerCase();
+      });
+      setTimeout(() => {
+        resolve(categoryRequested);
+      }, 2000);
+    });
+  }
+
+  export default getData;

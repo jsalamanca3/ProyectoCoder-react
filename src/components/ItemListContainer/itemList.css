@@ -1,0 +1,31 @@
+.main-section {
+    width: 100%;
+    height: auto;
+    padding: 1% 5%;
+}
+
+.h1-saludo {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 5rem;
+}
+.h2-listado {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+}
+
+.container-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,32 @@
+.header-div {
+    display: grid;
+    grid-area: 1 / 2 / 2 / 6;
+    width: 100%;
+    height: auto;
+    justify-content: end;
+}
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+    height: auto;
+}
+li {
+    list-style: none;
+}
+.header-nav-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+a:hover {
+    color: brown;
+}

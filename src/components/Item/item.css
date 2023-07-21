@@ -1,0 +1,24 @@
+.item-card {
+    width: 25%;
+    margin-top: 10px;
+    padding: 1%;
+    border-radius: 15px;
+    border: none;
+    background-color: #181719;
+    box-shadow: 0 0 15px #181719;
+    text-align: center;
+}
+.item-card_img {
+    width: 100%;
+    height: auto;
+    background-image: cover;
+}
+.item-card_header,
+.item-card_detail {
+    font-size: 1.4rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    color: #e6e8e6;
+    text-align: center;
+    border-bottom: 1px solid #e6e8e6;
+}
