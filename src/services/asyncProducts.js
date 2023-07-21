@@ -2,7 +2,7 @@ const productos = [
     {
       title: "Charmeleon",
       id: 1,
-      limit: 10,
+      stock: 10,
       description: "Soy una descripcion",
       img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
       price: 3000,
@@ -38,7 +38,7 @@ const productos = [
     {
       title: "Haunter",
       id: 5,
-      limit: 6,
+      stock: 6,
       description: "Soy una descripcion",
       img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
       price: 700,

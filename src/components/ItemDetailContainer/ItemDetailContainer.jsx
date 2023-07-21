@@ -2,6 +2,7 @@ import "./itemDetailContainer.css"
 import { useState, useEffect } from "react";
 import { getProductData } from "../../services/asyncProducts";
 import { useParams } from "react-router-dom";
+import ItemCount from "../ItemCount/ItemCount";
 
 
 function ItemDetailContainer() {
@@ -31,6 +32,9 @@ function ItemDetailContainer() {
           <div className="container-card_product">
               <h4 className="text-card-price">$ {product.price}</h4>
               <small className="text-card-description">{product.description}</small>
+          </div>
+          <div className="container-card_product">
+                <ItemCount key={product.id} stock={product.stock} />
           </div>
         </div>
       </div>

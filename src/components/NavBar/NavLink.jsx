@@ -1,7 +1,7 @@
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 
-function BarraNavegacion() {
+function NavLink() {
 
         return (
         <>
@@ -21,4 +21,4 @@ function BarraNavegacion() {
     )
 }
 
-export default BarraNavegacion;
+export default NavLink;

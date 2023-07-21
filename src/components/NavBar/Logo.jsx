@@ -5,7 +5,7 @@ import logo from '../../assets/logo192.png';
 function Logo() {
   return (
     <Link to="/" className="App-logo">
-      <img src={logo} alt="PóKemon" />
+      <img src={logo} alt="PóKemon" className="img-logo" />
     </Link>
   )
 }

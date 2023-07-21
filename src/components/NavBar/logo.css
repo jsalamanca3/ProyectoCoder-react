@@ -1,0 +1,10 @@
+.App-logo {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    height: auto;
+  }
+  .img-logo {
+    width: 30%;
+    height: auto;
+    background-size: cover;
+  }
