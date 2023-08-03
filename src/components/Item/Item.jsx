@@ -8,7 +8,7 @@ function Item(props) {
   return (
     <div className="item-card">
       <div className="item-card_img">
-        <img src={img} alt="imagen"></img>
+        <img className="img-card" src={img} alt="imagen"></img>
       </div>
       <div className="item-card_header">
         <h2>{title}</h2>

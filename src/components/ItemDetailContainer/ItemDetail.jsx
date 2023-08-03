@@ -1,6 +1,6 @@
 import React from "react";
 import ItemCount from "../ItemCount/ItemCount";
-import "./itemDetailContainer.css"
+import "./itemDetail.css"
 
 
 function ItemDetail(props) {
