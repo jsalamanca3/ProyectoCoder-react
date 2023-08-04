@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from "react";
+import { React, useState } from "react";
 import "./itemcount.css"
 
-const ItemCount = ({ producto, stock }) => {
+function ItemCount(props) {
   const [count, setCount] = useState(1);
 
-  useEffect(() => {
-  }, []);
 
   const handleIncrement = () => {
-    if (count < stock) {
+    if (count < props.stock) {
       setCount((prevCount) => prevCount + 1);
     }
   };
@@ -21,13 +19,13 @@ const ItemCount = ({ producto, stock }) => {
 
   return (
     <div className="div-container-itemcount">
-      <p className="p-stock-count">Stock disponible: {stock}</p>
+      <p className="p-stock-count">Stock disponible: {props.stock}</p>
       <div className="div-count">
         <button className="btn-increment" onClick={handleIncrement}>+</button>
         <p className="p-count">{count}</p>
         <button className="btn-Decrement" onClick={handleDecrement}>-</button>
       </div>
-      <button className="btn-carrito">Añadir al Carrito</button>
+      <button onClick={() => props.onConfirm(count)} className="btn-carrito">Añadir al Carrito</button>
     </div>
   );
 };

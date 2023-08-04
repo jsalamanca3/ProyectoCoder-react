@@ -12,6 +12,7 @@
     width: 350px;
     height: auto;
     border: 1px solid black;
+    padding: 3%;
 }
 .container-img {
     background-size: cover;
@@ -21,9 +22,7 @@
     width: 100%;
     height: auto;
 }
-.container-card_product {
-    padding: 2%;
-}
+
 .text-card-product {
     margin-top: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -33,4 +32,9 @@
 .text-card-description {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2rem;
+}
+.link-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

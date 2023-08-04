@@ -7,11 +7,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Saludo from "./components/ItemListContainer/Saludo";
 import Logo from "./components/NavBar/Logo";
 import Start from "./components/Start/Start";
+import { CartContextProvider } from "./context/cartContext";
+import CartContainer from "./components/CartContainer/CartContainer";
 
 
 function App() {
   return (
     <div className="App">
+    <CartContextProvider>
       <BrowserRouter>
         <header className="App-header">
         <Logo />
@@ -62,12 +65,14 @@ function App() {
                   }
                 />
                 <Route path="/product/:id" element={<ItemDetailContainer />} />
+                <Route path="/cart" element={<CartContainer />}></Route>
                 <Route path="*" element={<h1>Page not found: 404</h1>} />
               </Routes>
             </div>
           </section>
         </main>
       </BrowserRouter>
+    </CartContextProvider>
       <footer>
         <div>
           <nav className="h">
