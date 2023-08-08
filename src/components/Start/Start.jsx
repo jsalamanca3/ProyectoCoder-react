@@ -14,28 +14,28 @@ function Start() {
                 <p className="p-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div className="div-section-galeria">
-                <h2> Nuestra galeria</h2>
+                <h2 className="h2-galeria"> Nuestra galeria</h2>
                 <div className="container-galeria-start">
                     <div className="caja-1">
-                    <img src="/" alt="Imagen1"/>
+                    <img className="img-galery-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/95.svg" alt="Onix"/>
                     </div>
                     <div className="caja-2">
-                    <img src="/" alt="Imagen1"/>
+                    <img className="img-galery-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/103.svg" alt="Exeggutor"/>
                     </div>
                     <div className="caja-3">
-                    <img src="/" alt="Imagen1"/>
+                    <img className="img-galery-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/108.svg" alt="Lickitung"/>
                     </div>
                     <div className="caja-4">
-                    <img src="/" alt="Imagen1"/>
+                    <img className="img-galery-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/125.svg" alt="Electabuzz"/>
                     </div>
                     <div className="caja-5">
-                    <img src="/" alt="Imagen1"/>
+                    <img className="img-galery-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/141.svg" alt="Kabutops"/>
                     </div>
                     <div className="caja-6">
-                    <img src="/" alt="Imagen1"/>
+                    <img className="img-galery-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/144.svg" alt="Articuno"/>
                     </div>
                     <div className="caja-7">
-                    <img src="/" alt="Imagen1"/>
+                    <img className="img-galery-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/150.svg" alt="Mewtwo"/>
                     </div>
                 </div>
             </div>

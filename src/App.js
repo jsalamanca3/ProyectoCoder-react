@@ -9,6 +9,12 @@ import Logo from "./components/NavBar/Logo";
 import Start from "./components/Start/Start";
 import { CartContextProvider } from "./context/cartContext";
 import CartContainer from "./components/CartContainer/CartContainer";
+import OrderConfirm from "./components/OrderConfirm/OrderConfirm";
+import Checkout from "./components/Checkout/Checkout";
+import {FaFacebook, FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
+import Nosotros from "./components/Start/Nosotros";
+
 
 
 function App() {
@@ -42,31 +48,14 @@ function App() {
                   <ItemListContainer />
                 </>
                 }/>
-                <Route path="/category/:categoryId" element={<ItemListContainer />}/>
-                <Route path="/prueba" element={
-                  <div>
-                    <h1> ¿Quiénes somos?</h1>
-                      <div>
-                        <h2> Somos una tienda dedicada a vender productos de...</h2>
-                        <img src="../../assets/logo192.png" alt="Presentacion"/>
-                        <hr/>
-                      </div>
-                      <div>
-                        <h2> Nuestos Valores</h2>
-                      </div>
-                      <div>
-                        <h2> Ponte en contacto con nosotros</h2>
-                        <div>
-                          <p>Si quieresa saber mas acerca de nosotros</p>
-                          <p>Siguenos en nuestras redes sociales</p>
-                        </div>
-                      </div>
-                  </div>
-                  }
+                <Route path="/category/:categoryId" element={<ItemListContainer />} />
+                <Route path="/sobre-nosotros" element={<Nosotros />          }
                 />
                 <Route path="/product/:id" element={<ItemDetailContainer />} />
-                <Route path="/cart" element={<CartContainer />}></Route>
-                <Route path="*" element={<h1>Page not found: 404</h1>} />
+                <Route path="/cart" element={<CartContainer />} />
+                <Route path="/checkout" element={ <Checkout /> }/>
+                <Route path="/order-confirmation/:id" element={ <OrderConfirm /> }/>
+                <Route path="*" element={<NotFoundPage />} />
               </Routes>
             </div>
           </section>
@@ -75,16 +64,16 @@ function App() {
     </CartContextProvider>
       <footer>
         <div>
-          <nav className="h">
-              <ul className="h">
-                <li>GitHub</li>
-                <li>YouTube</li>
-                <li>Facebook</li>
-                <li>Linkendin</li>
+          <nav className="footer-nav-container">
+              <ul className="footer-nav-ul">
+                <li><a className="footer-li-a" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><FaFacebook /></a></li>
+                <li><a className="footer-li-a" href="https://github.com/jsalamanca3/ProyectoCoder-react/tree/PreEntrega2SalamancaCh" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
+                <li><a className="footer-li-a" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></li>
+                <li><a className="footer-li-a" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><FaYoutube /></a></li>
               </ul>
             </nav>
         </div>
-        <h2>Todos los derechos Reservados 2023</h2>
+        <h2 className="h2-footer">Todos los derechos Reservados 2023</h2>
       </footer>
     </div>
   );

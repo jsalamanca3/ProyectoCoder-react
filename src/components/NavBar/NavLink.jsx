@@ -15,7 +15,7 @@ function NavLink() {
             <Link to="/category/planta" className="nav-ul-a">Planta</Link>
             </li>
             <li>
-            <Link to="/prueba" className="nav-ul-a">Sobre Nosotros</Link>
+            <Link to="/sobre-nosotros" className="nav-ul-a">Sobre Nosotros</Link>
             </li>
         </>
     )

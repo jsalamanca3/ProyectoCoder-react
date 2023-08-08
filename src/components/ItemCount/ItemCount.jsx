@@ -21,11 +21,11 @@ function ItemCount(props) {
     <div className="div-container-itemcount">
       <p className="p-stock-count">Stock disponible: {props.stock}</p>
       <div className="div-count">
-        <button className="btn-increment" onClick={handleIncrement}>+</button>
+        <button disabled={props.stock === 0} className="btn-increment" onClick={handleIncrement}>+</button>
         <p className="p-count">{count}</p>
-        <button className="btn-Decrement" onClick={handleDecrement}>-</button>
+        <button disabled={props.stock === 0} className="btn-Decrement" onClick={handleDecrement}>-</button>
       </div>
-      <button onClick={() => props.onConfirm(count)} className="btn-carrito">Añadir al Carrito</button>
+      <button disabled={props.stock === 0} onClick={() => props.onConfirm(count)} className="btn-carrito">Añadir al Carrito</button>
     </div>
   );
 };
