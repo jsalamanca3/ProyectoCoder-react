@@ -14,15 +14,22 @@
   background-color: #282c34;
 }
 
-footer {
+.footer {
+  position: fixed;
+  margin-bottom: 5px;
+  bottom: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: auto;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: #282c34;
   color: aliceblue;
+}
+
+.div-container-footer {
+  width: 35%;
+  background-color: #282c34c5;
+  box-shadow: 0 0 5px #000000;
+  border-radius: 30px 30px;
 }
 
 .footer-nav-container {
@@ -34,18 +41,20 @@ footer {
 .footer-nav-ul {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
   justify-content: space-around;
   align-items: center;
 }
 
 .h2-footer {
-  margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 2rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
 }
+
 .footer-li-a {
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: aliceblue;
 }

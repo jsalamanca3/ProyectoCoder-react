@@ -7,8 +7,9 @@
     height: auto;
 }
 .h-nosotros {
-    font-size: 5.5rem;
     margin-bottom: 10px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5.5rem;
 }
 .div-container-somos {
     display: flex;
@@ -20,8 +21,9 @@
     text-align: center;
 }
 .h-somos {
-    font-size: 3rem;
     margin-bottom: 20px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
 }
 .img-somos {
     width: 100%;
@@ -45,8 +47,9 @@ hr {
     padding: 0 5%;
 }
 .h-valores {
-    font-size: 4.5rem;
     margin-bottom: 10px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4.5rem;
 }
 .container-valores{
     display: flex;
@@ -72,6 +75,7 @@ hr {
     text-align: center;
     color: aliceblue;
     border-radius: 25px;
+    font-family: 'Permanent Marker', cursive;
 }
 .img-valores{
     width: 85%;
@@ -80,8 +84,9 @@ hr {
 .div-contacto,
 .div-saber-mas {
     margin-bottom: 10px;
-    font-size: 3.5rem;
     text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3.5rem;
 }
 .p-saber-mas {
     margin-bottom: 15px;

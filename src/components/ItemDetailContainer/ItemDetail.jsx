@@ -7,7 +7,7 @@ function ItemDetail(props) {
 
     return(
     <>
-      <div className="div-container-product">
+      <>
         <div>
           <div className="container-img container-card_product">
               <img className="img-product" src={product.img} alt="imagen"></img>
@@ -20,7 +20,7 @@ function ItemDetail(props) {
               <small className="text-card-description">{product.description}</small>
           </div>
         </div>
-      </div>
+      </>
     </>
     )
 }

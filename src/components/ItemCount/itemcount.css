@@ -3,7 +3,9 @@
     height: auto;
 }
 .p-stock-count {
-    font-size: 1.8rem;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
 }
 .div-count {
     display: flex;
@@ -13,20 +15,37 @@
     gap: 12px;
     width: 100%;
     height: auto;
-    margin-top: 15px;
 }
 .p-count {
-    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
 }
 .btn-increment,
 .btn-Decrement {
     width: 60px;
     height: 40px;
+    margin-top: 10px;
+    border-radius: 20px;
     font-size: 2rem;
 }
 .btn-carrito {
     width: 100%;
-    height: 40px;
-    margin-top: 20px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     font-size: 2rem;
+    border-radius: 20px;
+}
+.btn-increment,
+.btn-Decrement,
+.btn-carrito {
+    background-color: #181719;
+    border: #181719;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.btn-increment:hover,
+.btn-Decrement:hover,
+.btn-carrito:hover {
+    color: rgb(229, 255, 0);
 }

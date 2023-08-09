@@ -12,6 +12,7 @@ import {
   writeBatch
 } from "firebase/firestore";
 
+
 const firebaseConfig = {
     apiKey: "AIzaSyD-4mlAKg_g_XauDcMGdiTxpdCzrrMxCGw",
     authDomain: "proyecto-react-coderhous-fdcef.firebaseapp.com",
@@ -40,14 +41,21 @@ async function getData() {
 
 async function getProductData(id) {
   const docRef = doc(db, "products", id);
-  const docSnapshot = await getDoc(docRef);
 
-  if (docSnapshot.exists()) {
-    return { ...docSnapshot.data(), id: docSnapshot.id };
-  } else {
-    throw new Error("No encontramos ese producto.");
+  try {
+    const docSnapshot = await getDoc(docRef);
+
+    if (docSnapshot.exists()) {
+      return { ...docSnapshot.data(), id: docSnapshot.id };
+    } else {
+      throw new Error("No se ha encontrado el producto");
+    }
+  } catch (error) {
+    throw error;
   }
 }
+
+
 
 
 async function getCategoryData(categoryId) {
@@ -286,4 +294,4 @@ async function _exportProductsWithBatch(){
 }
 
 
-export { getData, getProductData, getCategoryData, createOrder, getOrder, _exportProduct, _exportProductsWithBatch };
+export { getData, getProductData, getCategoryData, createOrder, getOrder, _exportProduct, _exportProductsWithBatch, db };

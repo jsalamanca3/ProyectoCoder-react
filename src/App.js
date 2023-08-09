@@ -14,6 +14,8 @@ import Checkout from "./components/Checkout/Checkout";
 import {FaFacebook, FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 import Nosotros from "./components/Start/Nosotros";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -57,13 +59,15 @@ function App() {
                 <Route path="/order-confirmation/:id" element={ <OrderConfirm /> }/>
                 <Route path="*" element={<NotFoundPage />} />
               </Routes>
+              <ToastContainer />
             </div>
           </section>
         </main>
       </BrowserRouter>
     </CartContextProvider>
       <footer>
-        <div>
+      <div className="footer">
+        <div className="div-container-footer">
           <nav className="footer-nav-container">
               <ul className="footer-nav-ul">
                 <li><a className="footer-li-a" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><FaFacebook /></a></li>
@@ -72,8 +76,9 @@ function App() {
                 <li><a className="footer-li-a" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><FaYoutube /></a></li>
               </ul>
             </nav>
+            <h2 className="h2-footer">Todos los derechos Reservados 2023</h2>
         </div>
-        <h2 className="h2-footer">Todos los derechos Reservados 2023</h2>
+      </div>
       </footer>
     </div>
   );

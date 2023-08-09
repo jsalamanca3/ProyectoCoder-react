@@ -26,7 +26,11 @@ function ItemListContainer(props) {
   }, [categoryId]);
 
   if (isLoading) {
-    return <DotSpinner size={100} speed={1.5} color="blue" />; //para modificar el loader
+    return (
+      <div className={`div-container-product ${isLoading ? "center-loader" : ""}`}>
+        <DotSpinner size={100} speed={2} color="black" />
+      </div>
+    );
   } else {
     console.log(products)
     return products.length === 0 ? (

@@ -13,6 +13,7 @@
     height: auto;
 }
 li {
+    font-family: 'Permanent Marker', cursive;
     list-style: none;
 }
 .header-nav-ul {
@@ -24,9 +25,9 @@ li {
 }
 
 a {
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 a:hover {
-    color: brown;
+    color: rgb(250, 246, 0);
 }
