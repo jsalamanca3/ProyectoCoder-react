@@ -1,0 +1,41 @@
+.container-orderConfirm {
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+.h-orderConfirm {
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+.div-container-products-orderConfirm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 12px;
+}
+.p-orderConfirm,
+.p-orderConfirm-total {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.h-products-description-orderConfirm {
+    margin-top: 40px;
+    padding: 0 0 0 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.h-loading-orderconfirm {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.p-orderConfirm-total {
+    text-align: end;
+    margin-bottom: 30px;
+}

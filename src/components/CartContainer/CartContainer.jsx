@@ -9,6 +9,14 @@ function CartContainer() {
 
   const totalPrice = cart.reduce((acc, item) => acc + item.count * item.price, 0);
 
+  if (cart.length === 0) {
+    return (
+      <div className="div-container-cart-empty">
+        <p className="p-cart-empty">No hay productos en el carrito.</p>
+        <Link to="/" className="a-back-to-home">Volver a la tienda</Link>
+      </div>
+    );
+  }
   return (
     <div className="div-container-cart-products">
       <h1 className="h-cart-products">Productos en Carrito:</h1>
@@ -30,7 +38,9 @@ function CartContainer() {
       </div>
       <br />
       <div className="div-total-in-cart">Total de la compra: ${totalPrice}</div>
-      <Link to="/checkout" className="a-checkout-in-cart">Comprar</Link>
+      <Link to={cart.length > 0 ? "/checkout" : "#"} className="a-checkout-in-cart">
+        Comprar
+      </Link>
     </div>
   );
 }

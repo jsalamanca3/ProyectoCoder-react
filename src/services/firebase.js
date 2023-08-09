@@ -14,9 +14,9 @@ import {
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD-4mlAKg_g_XauDcMGdiTxpdCzrrMxCGw",
-    authDomain: "proyecto-react-coderhous-fdcef.firebaseapp.com",
-    projectId: "proyecto-react-coderhous-fdcef",
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
     storageBucket: "proyecto-react-coderhous-fdcef.appspot.com",
     messagingSenderId: "618357078489",
     appId: "1:618357078489:web:7e12885744f9f8469e01c8",
