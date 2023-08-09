@@ -13,7 +13,7 @@ const NotFoundPage = () => {
       </div>
       <div className='div-text-not-found-page'>
       <h1>404 - Página no encontrada</h1>
-      <p>Lo sentimos, la página que estás buscando no existe.</p>
+      <p className='p-not-found'>Lo sentimos, la página que estás buscando no existe.</p>
       <button onClick={handleGoHome} className='btn-not-found-page'>Volver al inicio</button>
       </div>
     </div>

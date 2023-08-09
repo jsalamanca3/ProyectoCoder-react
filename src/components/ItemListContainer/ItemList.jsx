@@ -7,7 +7,7 @@ function ItemList(props) {
     return(
     <>
       <div>
-        <h2 className="h2-listado">Listado de Productos</h2>
+        <h2 className="h2-listado">Mira nuestros Productos</h2>
         <div className="container-products">
           {products.map((item) => (
             <Item key={item.id} {...item} />

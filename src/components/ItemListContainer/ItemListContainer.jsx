@@ -11,19 +11,30 @@ function ItemListContainer(props) {
 
   const { categoryId } = useParams();
 
+
   useEffect(() => {
     async function requestProducts() {
-      console.log(categoryId);
-      let respuesta = categoryId
-        ? await getCategoryData(categoryId)
-        : await getData();
-      setProducts(respuesta);
-      setIsLoading(false);
+      try {
+        let respuesta = [];
 
+        if (categoryId) {
+          console.log(categoryId)
+          respuesta = await getCategoryData(categoryId);
+        } else {
+          respuesta = await getData();
+        }
+
+        setProducts(respuesta);
+        setIsLoading(false);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+        setIsLoading(false);
+      }
     }
 
     requestProducts();
   }, [categoryId]);
+
 
   if (isLoading) {
     return (

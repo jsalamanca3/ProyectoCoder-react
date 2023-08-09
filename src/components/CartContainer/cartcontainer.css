@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     height: auto;
+    margin-bottom: 100px;
 }
 .h-cart-products {
     font-family: 'Permanent Marker', cursive;
@@ -61,10 +62,14 @@
     background-color: #181719;
     border: #181719;
     box-shadow: 0 0 10px #181719;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
 }
 .btn-products-in-cart:hover {
-    color: #fffb1d;
+    font-weight: 700;
+    background: red;
 }
+
 .div-total-in-cart {
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
@@ -84,4 +89,9 @@
     font-size: 3rem;
     border-radius: 20px;
     box-shadow: 0 0 10px #181719;
+}
+.a-checkout-in-cart:hover {
+    color: #ffffff;
+    background: green;
+    font-weight: 700;
 }

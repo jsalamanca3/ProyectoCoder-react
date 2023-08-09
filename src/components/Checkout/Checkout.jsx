@@ -2,6 +2,7 @@ import { cartContext } from "../../context/cartContext";
 import { useContext, useState } from "react";
 import { createOrder } from "../../services/firebase";
 import { useNavigate } from "react-router-dom";
+import "./checkout.css"
 
 function Checkout(){
   const [buyer, setBuyer] = useState({
@@ -52,31 +53,36 @@ function Checkout(){
 
 
   return (
-    <form>
-      <h2>Completa tus datos para completar la compra🛍</h2>
+    <form className="container-form-paid">
+      <h2 className="h-title-form">Completa tus datos para completar la compra</h2>
 
-      <div style={{ display: 'flex', marginBottom: 8 }}>
-        <label htmlFor="firstname" style={{ width: '100px', marginRight: 4 }}>Nombre</label>
-        <input required value={buyer.firstnamename} name="firstname" type="text" onChange={onInputChange} />
+      <div className="div-form-divs-labels">
+        <div className="div-form-label">
+          <label htmlFor="firstname" className="label-forms-paid">Nombre</label>
+          <input className="input-form-paid" required value={buyer.firstnamename} name="firstname" type="text" onChange={onInputChange} />
+        </div>
+
+        <div className="div-form-label">
+          <label htmlFor="lastname" className="label-forms-paid">Apellido</label>
+          <input className="input-form-paid" required value={buyer.lastname} name="lastname" type="text" onChange={onInputChange} />
+        </div>
+
+        <div className="div-form-label">
+          <label className="label-forms-paid">Edad</label>
+          <input className="input-form-paid" required value={buyer.age}  name="age" type="number" onChange={onInputChange} />
+        </div>
+
+        <div className="div-form-label">
+          <button className="btn-form-paid"
+            disabled={!(buyer.firstname !== '' && buyer.lastname !== '' && buyer.age !== '')}
+            onClick={handleCheckout}
+          >
+            Confirmar Compra
+          </button>
+          <button className="btn-form-paid" onClick={resetForm}>Cancelar</button>
+        </div>
       </div>
 
-      <div style={{ display: 'flex', marginBottom: 8 }}>
-        <label htmlFor="lastname" style={{ width: '100px', marginRight: 4 }}>Apellido</label>
-        <input required value={buyer.lastname} name="lastname" type="text" onChange={onInputChange} />
-      </div>
-
-      <div style={{ display: 'flex', marginBottom: 8 }}>
-        <label style={{ width: '100px', marginRight: 4 }}>Edad</label>
-        <input required value={buyer.age}  name="age" type="number" onChange={onInputChange} />
-      </div>
-
-        <button
-          disabled={!(buyer.firstname !== '' && buyer.lastname !== '' && buyer.age !== '')}
-          onClick={handleCheckout}
-        >
-          Confirmar Compra
-        </button>
-        <button onClick={resetForm}>Cancelar</button>
 
     </form>
   );

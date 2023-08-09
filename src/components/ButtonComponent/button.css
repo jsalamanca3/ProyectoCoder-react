@@ -7,11 +7,13 @@
     border: none;
     cursor: pointer;
     color: rgb(255, 255, 255);
+    background: #181719;
     box-shadow: 0 0 5px #181719;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-family: 'Roboto', sans-serif;
 }
 .btn:hover {
-    color: #fffc3d;
-    box-shadow: 0px 0px 10px #60f832ec;
+    box-shadow: 0px 0px 10px #131111ec;
+    background-color: green;
+    font-weight: 700;
 }

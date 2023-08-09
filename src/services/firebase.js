@@ -55,19 +55,17 @@ async function getProductData(id) {
   }
 }
 
-
-
-
 async function getCategoryData(categoryId) {
   const productsRef = collection(db, "products");
 
-  const q = query(productsRef, where("category", "==", "categoryId"));
+  const q = query(productsRef, where("category", "==", categoryId));
   const documentsSnapshot = await getDocs(q);
 
   const documents = documentsSnapshot.docs;
 
   return documents.map((item) => ({ ...item.data(), id: item.id }));
 }
+
 
 async function createOrder(orderData){
   const collectionRef = collection(db, "orders")
