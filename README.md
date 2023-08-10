@@ -62,10 +62,10 @@ Puedes [descargar](https://github.com/jsalamanca3/ProyectoCoder-react/archive/re
 
 ## Imágenes
 
-![screenshot](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/2.PNG)
-![screenshot](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/3.PNG)
-![screenshot](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/4.PNG)
-![screenshot](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/5.PNG)
+![App screenshot](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/2.PNG)
+![App screenshot](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/3.PNG)
+![App screenshot](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/4.PNG)
+![App screenshot](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/5.PNG)
 
 ## License
 
