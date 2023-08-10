@@ -87,9 +87,9 @@ function ItemDetailContainer() {
                   Ya agregaste {itemInCart.count} unidades de este producto
                 </h2>
               )}
-              <Link to="/" className="link-inicio">
+              <Link to="/productos" className="link-inicio">
                 <ButtonComponent colorFondo="#000000cc" radius="20px" h="50px">
-                  Volver al inicio
+                  Volver al a la tienda
                 </ButtonComponent>
               </Link>
             </div>

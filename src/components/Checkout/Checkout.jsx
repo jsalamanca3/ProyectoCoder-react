@@ -1,7 +1,7 @@
 import { cartContext } from "../../context/cartContext";
 import { useContext, useState } from "react";
 import { createOrder } from "../../services/firebase";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./checkout.css"
 
 function Checkout(){
@@ -59,7 +59,7 @@ function Checkout(){
       <div className="div-form-divs-labels">
         <div className="div-form-label">
           <label htmlFor="firstname" className="label-forms-paid">Nombre</label>
-          <input className="input-form-paid" required value={buyer.firstnamename} name="firstname" type="text" onChange={onInputChange} />
+          <input className="input-form-paid" required value={buyer.firstname} name="firstname" type="text" onChange={onInputChange} />
         </div>
 
         <div className="div-form-label">
@@ -81,9 +81,10 @@ function Checkout(){
           </button>
           <button className="btn-form-paid" onClick={resetForm}>Cancelar</button>
         </div>
+        <div className="div-form-label">
+         <Link to="/productos" className="link-product-checkout">Volver a la tienda </Link>
+        </div>
       </div>
-
-
     </form>
   );
 }
