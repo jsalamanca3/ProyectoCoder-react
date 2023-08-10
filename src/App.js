@@ -39,9 +39,9 @@ function App() {
               </div>
             </section>
           </main>
+          <Footer />
         </BrowserRouter>
       </CartContextProvider>
-      <Footer />
     </div>
   );
 }
