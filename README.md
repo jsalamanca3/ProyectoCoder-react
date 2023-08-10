@@ -1,138 +1,71 @@
-#Proyecto de React
+# Proyecto Ecommerce React - Julián Salamanca
+* Proyecto realizado bajo la guía del curso de React de CoderHouse
 
-![screenshot]()
+Soy Julián y este es mi proyecto para el curso de React de la Plataforma de CoderHouse, si bien, para esta ocación realizamos una app simulando un ecommerce. En la elaboración de esta app retomamos varias librerias que nos permitian trabajar con "Creater React".
 
-## Key Features
+* Espero que sea de su agrado.
 
-* LivePreview - Make changes, See changes
-  - Instantly see what your Markdown documents look like in HTML as you create them.
-* Sync Scrolling
-  - While you type, LivePreview will automatically scroll to the current location you're editing.
-* GitHub Flavored Markdown
-* Syntax highlighting
-* [KaTeX](https://khan.github.io/KaTeX/) Support
-* Dark/Light mode
-* Toolbar for basic Markdown formatting
-* Supports multiple cursors
-* Save the Markdown preview as PDF
-* Emoji support in preview :tada:
-* App will keep alive in tray for quick usage
-* Full screen mode
-  - Write distraction free.
-* Cross platform
-  - Windows, macOS and Linux ready.
+## Características del Ecommerce
 
-## How To Use
+* Realizar compras:
+  - Puedes navegar u agregar distintos productos.
+* Uso de Firebase:
+  - Con la implementación de Firebase, se permite cargar productos y así mismo almacenas las compras de forma dinámica.
+* Alertas con Toastify:
+  - Gracias a esta libreria se pueden mostrar alertas de forma dinámica al usuario mientras agrega productos al carrito y así mismo cuando confirma la compra.
+* Loaders con DotSpinner:
+  - En varias de las partes del proyecto se integro un Spiner para poder controlar el tiempo en el que se demora en renderizar las peticiones.
+* Librerias de React:
+  - UseContext
+  - UseState
+  - UseEffect
+  - UseParams
+  - UseNavigate
+  - Link
+  - BrowserRouter
+  - Routes
+  - Routes
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+De manera muy general, gracias al uso de las librerias, Hook y frameworks empleados para la construcción de este proyecto se puede tener un flujo de cada uno de los componentes e intancias de la App.
+
+## Como lo puedes usar
+
+Para clonar y ejecutar esta aplicación, necesitará [Git](https://git-scm.com) y [Node.js](https://nodejs.org/en/download/) (que viene con [npm](http://npmjs.com)) instalados en su computadora. Desde la línea de comandos:
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
+# Clonas este repositorio
+$ git clone https://github.com/jsalamanca3/ProyectoCoder-react.gitelectron-markdownify
 
-# Go into the repository
-$ cd electron-markdownify
+# Ir al repositorio
+$ cd ecommerce-react-coderHouse
 
-# Install dependencies
+# Instalas las dependencias
 $ npm install
 
-# Run the app
+# Inicias la aplicación
 $ npm start
 ```
 
-> **Note**
-> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+> **Nota**
+> En caso de estar usando otro sistema operativo distindo a Windows, es importante que invetigue o le pregunte a alguien, para que así pueda funcionar sin problemas.
+> En caso de que lo instale y no llegue a funcionar, es importante que pueda conectar la App con Firebase, ya que al usar variables de entorno se han ocultado las credenciales.
+
+## Descargas
+
+Puedes [descargar](https://github.com/jsalamanca3/ProyectoCoder-react/archive/refs/heads/main.zip) este proyecto dando clic al enlace.
+
+## Agradecimientos:
+
+- Plataforma [CoderHouse](https://plataforma-login.coderhouse.com/)
+- Acada uno de los Tutores y Profesor Guía - comisión 43305
+
+## Imágenes
+
+![screenshot](https://academiausbbogedu-my.sharepoint.com/:i:/g/personal/jfsalamanca_academia_usbbog_edu_co/ESWkQ6zZ4GVIu9vZ7QK1KmQBxVnqNln4VOozI9ouoSMK6g?e=CTrh1Y)
+![screenshot](https://academiausbbogedu-my.sharepoint.com/:i:/g/personal/jfsalamanca_academia_usbbog_edu_co/ERoR4Ao6o1pPo7wpgMwzRGcBi5uq9GhP9XX_aACU6mZIvQ?e=qYKSc1)
+![screenshot](https://academiausbbogedu-my.sharepoint.com/:i:/g/personal/jfsalamanca_academia_usbbog_edu_co/ERoR4Ao6o1pPo7wpgMwzRGcBi5uq9GhP9XX_aACU6mZIvQ?e=f2kXiC)
+![screenshot](https://academiausbbogedu-my.sharepoint.com/:i:/g/personal/jfsalamanca_academia_usbbog_edu_co/Ed8sXqpsL9VFgOXOQ9DKc1IBoKvvLnQrgOzjjaOEn_or8Q?e=xlxMgN)
 
 
-## Download
-
-You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Markdownify for Windows, macOS and Linux.
-
-
-
-## Credits
-
-This software uses the following open source packages:
-
-- [Electron](http://electron.atom.io/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-- [showdown](http://showdownjs.github.io/showdown/)
-- [CodeMirror](http://codemirror.net/)
-- Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
-- [highlight.js](https://highlightjs.org/)
-
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
