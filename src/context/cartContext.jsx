@@ -8,7 +8,7 @@ function CartContextProvider(props) {
   function addToCart(product, count) {
     const newCart = [...cart];
     if (isInCart(product.id)) {
-      const indexUpdate = cart.findIndex( item => item.id === product.id)
+      const indexUpdate = cart.findIndex((item) => item.id === product.id);
       newCart[indexUpdate].count += count;
       setCart(newCart);
     } else {
@@ -18,11 +18,11 @@ function CartContextProvider(props) {
     }
   }
 
-  function isInCart(id){
-    return cart.some(item => item.id === id )
+  function isInCart(id) {
+    return cart.some((item) => item.id === id);
   }
-  function getItemInCart(id){
-    return cart.find(item => item.id === id )
+  function getItemInCart(id) {
+    return cart.find((item) => item.id === id);
   }
 
   function removeItem(id) {
@@ -63,7 +63,7 @@ function CartContextProvider(props) {
         clearCart,
         getTotalItemsInCart,
         getItem,
-        getTotalPriceInCart
+        getTotalPriceInCart,
       }}
     >
       {props.children}

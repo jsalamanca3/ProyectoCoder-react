@@ -9,8 +9,8 @@ import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import "./itemDetail.css";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
 import { DotSpinner } from "@uiball/loaders";
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ItemDetailContainer() {
   const [product, setProduct] = useState({});
@@ -48,7 +48,7 @@ function ItemDetailContainer() {
     setIsAddedToCart(true);
 
     toast.success(`Producto agregado al carrito, cantidad: ${count}`, {
-      position: 'top-right',
+      position: "top-right",
       autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -63,7 +63,9 @@ function ItemDetailContainer() {
   }
 
   return (
-    <div className={`div-container-product ${isLoading ? "center-loader" : ""}`}>
+    <div
+      className={`div-container-product ${isLoading ? "center-loader" : ""}`}
+    >
       {isLoading ? (
         <DotSpinner size={100} speed={2} color="black" />
       ) : (
@@ -89,7 +91,7 @@ function ItemDetailContainer() {
               )}
               <Link to="/productos" className="link-inicio">
                 <ButtonComponent colorFondo="#000000cc" radius="20px" h="50px">
-                  Volver al a la tienda
+                  Volver a la tienda
                 </ButtonComponent>
               </Link>
             </div>

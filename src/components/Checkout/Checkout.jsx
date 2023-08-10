@@ -14,8 +14,7 @@ function Checkout(){
   const { cart, getTotalPriceInCart } = useContext(cartContext);
   const navigate = useNavigate();
 
-
-  async function handleCheckout(evt){
+    async function handleCheckout(evt){
     evt.preventDefault();
     const orderData = {
       items: cart,
@@ -28,8 +27,8 @@ function Checkout(){
       const idOrder = await createOrder(orderData);
       navigate(`/order-confirmation/${idOrder}`);
      } catch (error) {
-      const idOrder = await createOrder(orderData);
-      navigate(`/order-confirmation/${idOrder}`);
+      const encodedError = encodeURIComponent(error.message);
+      navigate(`/order-confirmation/?error=${encodedError}`);
      }
   }
 
@@ -50,7 +49,6 @@ function Checkout(){
       age: "",
     })
   }
-
 
   return (
     <form className="container-form-paid">
@@ -90,5 +88,3 @@ function Checkout(){
 }
 
 export default Checkout;
-
-

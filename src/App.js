@@ -11,12 +11,11 @@ import { CartContextProvider } from "./context/cartContext";
 import CartContainer from "./components/CartContainer/CartContainer";
 import OrderConfirm from "./components/OrderConfirm/OrderConfirm";
 import Checkout from "./components/Checkout/Checkout";
-import {FaFacebook, FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 import Nosotros from "./components/Start/Nosotros";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import Footer from "./components/Start/Footer";
 
 
 function App() {
@@ -39,11 +38,7 @@ function App() {
           <section className="main-section">
             <div>
               <Routes>
-                <Route path="/" element={
-                  <>
-                    <Start />
-                  </>
-                  }/>
+                <Route path="/" element={ <Start /> }/>
                 <Route path="/productos" element={
                 <>
                   <Saludo colorTexto="blue" greenting="Bienvenido Usuario" />
@@ -65,21 +60,7 @@ function App() {
         </main>
       </BrowserRouter>
     </CartContextProvider>
-      <footer>
-      <div className="footer">
-        <div className="div-container-footer">
-          <nav className="footer-nav-container">
-              <ul className="footer-nav-ul">
-                <li><a className="footer-li-a" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><FaFacebook /></a></li>
-                <li><a className="footer-li-a" href="https://github.com/jsalamanca3/ProyectoCoder-react/tree/PreEntrega2SalamancaCh" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
-                <li><a className="footer-li-a" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></li>
-                <li><a className="footer-li-a" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><FaYoutube /></a></li>
-              </ul>
-            </nav>
-            <h2 className="h2-footer">Todos los derechos Reservados 2023</h2>
-        </div>
-      </div>
-      </footer>
+    <Footer />
     </div>
   );
 }

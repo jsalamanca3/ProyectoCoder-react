@@ -12,7 +12,6 @@ import {
   writeBatch
 } from "firebase/firestore";
 
-
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
@@ -25,7 +24,6 @@ const firebaseConfig = {
 
 const appFirebase = initializeApp(firebaseConfig);
 const db = getFirestore(appFirebase);
-
 
 async function getData() {
   const productsRef = collection(db, "products");
@@ -65,7 +63,6 @@ async function getCategoryData(categoryId) {
 
   return documents.map((item) => ({ ...item.data(), id: item.id }));
 }
-
 
 async function createOrder(orderData){
   const collectionRef = collection(db, "orders")
@@ -290,6 +287,5 @@ async function _exportProductsWithBatch(){
   const data = await batch.commit()
   console.log("Listo!", data)
 }
-
 
 export { getData, getProductData, getCategoryData, createOrder, getOrder, _exportProduct, _exportProductsWithBatch, db };

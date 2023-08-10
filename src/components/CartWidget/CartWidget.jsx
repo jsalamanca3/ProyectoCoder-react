@@ -15,7 +15,7 @@ function CartWidget() {
                         shopping_cart
                     </span>
                 </Link>
-            {showCart && (
+                {showCart && (
                 <div className="header-cartWidget-carrito">
                     <p className="cartWidget-carrito">{context.cart.length}</p>
                 </div>

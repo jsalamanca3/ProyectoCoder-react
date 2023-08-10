@@ -1,11 +1,12 @@
 import "./button.css";
 
 function ButtonComponent(props) {
-    const { children, colorFondo, radius, h } = props;
+    const { children, colorFondo, radius, h, w } = props;
     const styleButton = {
     backgroundColor: colorFondo,
     borderRadius: radius,
-    height: h
+    height: h,
+    width: w
     };
 
     return (

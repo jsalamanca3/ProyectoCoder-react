@@ -36,6 +36,23 @@
     font-size: 2rem;
 }
 .p-orderConfirm-total {
-    text-align: end;
+    height: 20vh;
     margin-bottom: 30px;
+    text-align: end;
+}
+.p-order-confirm-error {
+    height: 40vh;
+    margin-top: 200px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+.confirmation-section {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.confirmation-section p{
+    margin-top: 10px;
 }
