@@ -59,13 +59,15 @@ Puedes [descargar](https://github.com/jsalamanca3/ProyectoCoder-react/archive/re
 
 - Plataforma [CoderHouse](https://plataforma-login.coderhouse.com/)
 - A cada uno de los Tutores y Profesor Guía - comisión 43305
+- Tutor: Juan Manuel Maroñas
+- Profesor: Santiago Salkin
 
 ## Imágenes
 
-![App screenshot](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/2.PNG)
-![App screenshot](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/3.PNG)
-![App screenshot](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/4.PNG)
-![App screenshot](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/5.PNG)
+![Imgur](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/2.PNG)
+![Imgur](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/3.PNG)
+![Imgur](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/4.PNG)
+![Imgur](https://academiausbbogedu-my.sharepoint.com/personal/jfsalamanca_academia_usbbog_edu_co/Documents/img-ProyectoCoderHouse/5.PNG)
 
 ## License
 
