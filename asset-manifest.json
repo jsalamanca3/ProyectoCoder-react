@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ProyectoCoder-react/static/css/main.069791e8.css",
-    "main.js": "/ProyectoCoder-react/static/js/main.d4726886.js",
+    "main.js": "/ProyectoCoder-react/static/js/main.b2c3025b.js",
     "index.html": "/ProyectoCoder-react/index.html",
     "main.069791e8.css.map": "/ProyectoCoder-react/static/css/main.069791e8.css.map",
-    "main.d4726886.js.map": "/ProyectoCoder-react/static/js/main.d4726886.js.map"
+    "main.b2c3025b.js.map": "/ProyectoCoder-react/static/js/main.b2c3025b.js.map"
   },
   "entrypoints": [
     "static/css/main.069791e8.css",
-    "static/js/main.d4726886.js"
+    "static/js/main.b2c3025b.js"
   ]
 }
